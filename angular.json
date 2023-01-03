@@ -15,7 +15,12 @@
             "tsConfig": "projects/horizontal-scroll-menu/tsconfig.lib.json",
             "project": "projects/horizontal-scroll-menu/ng-package.json"
           }
-        },
+        ,          "configurations": {
+            "production": {
+              "tsConfig": "projects/horizontal-scroll-menu/tsconfig.lib.prod.json"
+            }
+          }
+},
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
